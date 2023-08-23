@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-# from .credentials import email, password
+from .credentials import email, password
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +26,7 @@ SECRET_KEY = '2rue53h9#2220t(1c$tx)&-2=*i0n138ug5)5lq$17)vpi#4at'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -90,16 +90,21 @@ WSGI_APPLICATION = 'youtify.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'youtify',
+    #     'USER': 'root',
+    #     'PASSWORD': '',
+    #     'HOST': '127.0.0.1',
+    #     'PORT': '3306',
+    #     'OPTIONS': {
+    #         'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
+    #     },
+
+    # },
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'youtify',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -148,10 +153,11 @@ STATICFILES_DIRS = [
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Email Config
-EMAIL_HOST = 'app.debugmail.io'
-EMAIL_HOST_USER = "396db541-de2d-4343-8c59-8e16f59b81e6"
-EMAIL_HOST_PASSWORD = "3381ac78-fb23-4639-a4fa-4d80ed71b193"
-EMAIL_PORT = 25
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = email
+EMAIL_HOST_PASSWORD = password
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 EMAIL_TIMEOUT = 300  # in seconds
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
