@@ -1,9 +1,3 @@
 {
-	"cSpell.words": ["lushlyrics", "runserver", "signup", "uidb", "virtualenv"],
-	"python.analysis.typeCheckingMode": "basic",
-	"cSpell.enableFiletypes": ["!python"],
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.autopep8"
-	},
-	"python.formatting.provider": "none"
+    "python.pythonPath": "D:\\Python_Interpretor\\python.exe"
 }
