@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="convert, convert playlists, transfer, syncing, smart links, free, apple music, streaming services" />
   {% block css %}
-	<link rel="stylesheet" href="{% static "formStyle.css" %}">
+	<link rel="stylesheet" href="{% static 'formStyle.css' %}">
   {% endblock %}
 	<title>Youttify</title>
 </head>
@@ -20,7 +20,8 @@
 
 			<div class="signup_header">
                 <a href="" target="_blank">
-				
+				<img
+                    src="https://cdn.discordapp.com/attachments/768083738848133130/768372618880483328/spotify.svg"></img>
                     </a>
             </div>
         </a>
@@ -42,7 +43,7 @@
                              text-align:center;">Username or password invalid</span>
                 {% endif %}
                 <button class='btn btn_log_in' type="submit">Log in</button>
-                <a href="{% url 'password_reset' %}" style="display:block; text-align:center; margin-top:10px;">Forgot your password?</a>
+                <a href="{% url 'password_reset' %}" class='btn btn_sign_up' >Forgot your password?</a>
                 <div class="divider"></div>
                 <p class='label center-align'>Don't have an account?</p>
             <a class='btn btn_sign_up' href="/signup">Sign Up for Lushlyrics</a>
