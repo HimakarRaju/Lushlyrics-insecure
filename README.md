@@ -46,22 +46,22 @@ And navigate to `http://127.0.0.1:8000/`.
 ***THE FINAL RESULTS AFTER ADDING THE LOGIN, REGISTER, FORGOT PASSWORD AND CHANGE PASSWORD***
 
 ***The main screen after login***
-![image](Lushlyrics-insecure/IMAGES/(1).png)
+![image](./IMAGES/(1).png)
 
 ***Login Screen***
-![image](Lushlyrics-insecure/IMAGES/(2).png)
+![image](./IMAGES/(2).png)
 
 ***Password Reset Screen***
-![image](Lushlyrics-insecure/IMAGES/(3).png)
+![image](./IMAGES/(3).png)
 
 ***Sign Up Screen***
-![image](Lushlyrics-insecure/IMAGES/(4).png)
+![image](./IMAGES/(4).png)
 
 Password Mail sent Screen***
-![image](../Lushlyrics-insecure/IMAGES/(5).png)
+![image](./IMAGES/(5).png)
 
 ***New Password Screen***
-![image](Lushlyrics-insecure/IMAGES/(8).png)
+![image](./IMAGES/(8).png)
 
 ***Password Changed Success Screen***
-![image](Lushlyrics-insecure/IMAGES/(9).png)
+![image](./IMAGES/(9).png)
